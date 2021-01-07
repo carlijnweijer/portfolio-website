@@ -6,31 +6,18 @@ interface NavigationProps {}
 
 export const Navigation: React.FC<NavigationProps> = () => {
   return (
-    <nav className="navbar">
+    <nav>
       <div className="nav-content">
         <ul className="nav-items">
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="section1"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              top
-            </Link>
-          </li>
           <li className="nav-item">
             <Link
               activeClass="active"
               to="section2"
               spy={true}
               smooth={true}
-              offset={-70}
               duration={1000}
             >
-              about
+              about me
             </Link>
           </li>
           <li className="nav-item">
@@ -39,7 +26,6 @@ export const Navigation: React.FC<NavigationProps> = () => {
               to="section3"
               spy={true}
               smooth={true}
-              offset={-70}
               duration={1000}
             >
               portfolio
@@ -51,7 +37,6 @@ export const Navigation: React.FC<NavigationProps> = () => {
               to="section4"
               spy={true}
               smooth={true}
-              offset={-70}
               duration={1000}
             >
               footer

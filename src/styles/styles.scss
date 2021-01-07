@@ -1,10 +1,16 @@
 @import "./config";
 @import "./_include-media.scss";
 
+.top-section {
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
   display: flex;
   height: 100vh;
   font-family: $text;
+  justify-content: center;
 
   @include media("<=tablet") {
     flex-direction: column;
@@ -35,10 +41,7 @@
   }
 }
 
-.navbar {
-  position: relative;
-  left: 0;
-
+nav {
   .nav-content {
     margin: 0 auto;
     display: flex;
@@ -63,4 +66,9 @@
       }
     }
   }
+}
+
+.navbar {
+  position: relative;
+  left: 0;
 }

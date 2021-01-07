@@ -22,7 +22,9 @@ export const Section: React.FC<SectionProps> = ({
         <div className="left-content">
           <h4 className="title">{title}</h4>
         </div>
-        <Navigation />
+        <div className="navbar">
+          <Navigation />
+        </div>
       </div>
       <div className="rightside">
         <h3>{subtitle}</h3>
