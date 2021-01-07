@@ -1,10 +1,15 @@
 // src/style/_config.scss
 
-@import url("https://fonts.googleapis.com/css?family=Alatsi|Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Source+Sans+Pro&display=swap");
 
-$primary: #006d80;
-$secondary: #00a5bf;
+$background-dark: #161925;
+$primary: #f39a9d;
+$secondary: #ffeaec;
+$third: #7ea2aa;
 $light: #e9edf3;
 $text-color: #333;
+
+$heading: "Amiko", sans-serif;
+$text: "Source Sans Pro", sans-serif;
 
 $vertical-space: 0.5rem;

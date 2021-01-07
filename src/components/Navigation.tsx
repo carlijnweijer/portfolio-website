@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import "../styles/components.scss";
+import "../styles/styles.scss";
 
 interface NavigationProps {}
 
@@ -18,7 +18,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
               offset={-70}
               duration={1000}
             >
-              Top Section
+              top
             </Link>
           </li>
           <li className="nav-item">
@@ -30,7 +30,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
               offset={-70}
               duration={1000}
             >
-              about Section
+              about
             </Link>
           </li>
           <li className="nav-item">
@@ -42,7 +42,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
               offset={-70}
               duration={1000}
             >
-              portfolio Section
+              portfolio
             </Link>
           </li>
           <li className="nav-item">
@@ -54,7 +54,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
               offset={-70}
               duration={1000}
             >
-              footer Section
+              footer
             </Link>
           </li>
         </ul>
