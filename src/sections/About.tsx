@@ -14,10 +14,12 @@ export const About: React.FC<AboutProps> = ({ id }) => {
   ];
   const trans = (x: number, y: number) =>
     `translate3d(${x / 10}px,${y / 10}px,0)`;
+
   const trans2 = (x: number, y: number) =>
-    `translate3d(${x / -8}px,${y / 8}px,0)`;
+    `translate3d(${x / -10}px,${y / 8}px,0)`;
+
   const trans3 = (x: number, y: number) =>
-    `translate3d(${x / 12}px,${y / 6}px,0)`;
+    `translate3d(${x / 12}px,${y / -6}px,0)`;
 
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
@@ -55,10 +57,11 @@ export const About: React.FC<AboutProps> = ({ id }) => {
           // @ts-ignore
           style={{ transform: interpolate(props.xy, trans2) }}
         >
-          <h5>I'm a Junior Web Developer driven by passion and curiosity.</h5>
+          <h5>I can't wait to buy a bigger backpack!!</h5>
           <p>
-            I believe in lifelong learning, constructive feedback and an open
-            mind.
+            At Codaisseur I filled my backpack with knowledge, tricks and tools.
+            I now have the ambitions to buy a bigger backpack soon! I'm
+            currently learning TypeScript and React Native.
           </p>
         </animated.div>
         <animated.div
@@ -66,10 +69,12 @@ export const About: React.FC<AboutProps> = ({ id }) => {
           // @ts-ignore
           style={{ transform: interpolate(props.xy, trans3) }}
         >
-          <h5>I'm a Junior Web Developer driven by passion and curiosity.</h5>
+          <h5>What I love most about programming</h5>
           <p>
-            I believe in lifelong learning, constructive feedback and an open
-            mind.
+            From I young age I have loved two hobbies very much; puzzles (like
+            sudoku) and drawing. In programming I have found these two hobbies
+            come together. Programming is like solving a complex puzzle and
+            painting a masterpiece at the same time!
           </p>
         </animated.div>
       </div>

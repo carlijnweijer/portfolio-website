@@ -20,12 +20,13 @@
   .about-card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     border: solid 2px black;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 5px 5px 2px black;
     margin: 30px;
+    width: 500px;
   }
 
   h5 {
