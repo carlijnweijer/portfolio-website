@@ -1,5 +1,4 @@
 import React from "react";
-import dummyText from "./Dummytext";
 import { Navigation } from "./Navigation";
 
 interface SectionProps {
@@ -34,7 +33,7 @@ export const Section: React.FC<SectionProps> = ({
       <div className="rightside">
         <h3>{subtitle}</h3>
         <p>{text}</p>
-        <p>{dummyText}</p>
+        <p>more text</p>
       </div>
     </div>
   );
