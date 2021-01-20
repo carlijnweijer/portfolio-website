@@ -1,0 +1,28 @@
+@import "./config";
+@import "./_include-media.scss";
+
+.portfolio-section {
+  margin-bottom: 20px;
+
+  .portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: solid 2px black;
+    padding: 10px;
+    box-shadow: 5px 5px 2px black;
+    margin: 25px auto;
+    width: 500px;
+    z-index: 1;
+
+    @include media("<=phone") {
+      width: 300px;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-family: "Roboto Mono";
+  }
+}

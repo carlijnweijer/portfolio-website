@@ -1,6 +1,5 @@
 import React from "react";
 import { animated, interpolate, useSpring } from "react-spring";
-import metBenz from "../assets/metBenz.jpg";
 import { Navigation } from "../components/Navigation";
 import "../styles/about.scss";
 
@@ -51,9 +50,7 @@ export const About: React.FC<AboutProps> = ({ id }) => {
           <p>
             I'm 26 years old, I live in The Hague and I'm the proud mom of a 6
             years old Golden Retriever named{" "}
-            <span className="tooltip">
-              Benz <img src={metBenz} className="tooltippic" alt="benz" />
-            </span>
+            <span className="tooltip">Benz</span>
           </p>
         </animated.div>
         <animated.div
