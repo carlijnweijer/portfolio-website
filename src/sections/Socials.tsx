@@ -14,12 +14,16 @@ export const Socials: React.FC<SocialsProps> = ({ id }) => {
       <div className="icons">
         <a
           href="http://github.com/carlijnweijer"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ width: "50px", height: "50px" }}
         >
           <img src={github} alt="githubicon" />
         </a>
         <a
           href="http://linkedin.com/in/carlijnvandeweijer"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ width: "50px", height: "50px" }}
         >
           <img src={linkedin} alt="linkedinicon" />
