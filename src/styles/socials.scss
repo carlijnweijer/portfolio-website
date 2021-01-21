@@ -1,0 +1,21 @@
+@import "./_include-media.scss";
+@import "./config";
+
+.socials-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Roboto Mono";
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    display: flex;
+    width: 10vw;
+    justify-content: space-around;
+  }
+}

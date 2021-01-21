@@ -1,5 +1,7 @@
 import React from "react";
-import { Navigation } from "../components/Navigation";
+import github from "../assets/github.svg";
+import linkedin from "../assets/linkedin.svg";
+import "../styles/socials.scss";
 
 interface SocialsProps {
   id: string;
@@ -7,19 +9,26 @@ interface SocialsProps {
 
 export const Socials: React.FC<SocialsProps> = ({ id }) => {
   return (
-    <div className="section" id={id} style={{ backgroundColor: "lightblue" }}>
-      <div className="leftside">
-        <div className="left-content">
-          <h4 className="title">socials</h4>
-        </div>
-        <div className="navbar">
-          <Navigation />
-        </div>
+    <div className="socials-section" id={id}>
+      <h1>find me on...</h1>
+      <div className="icons">
+        <a
+          href="http://github.com/carlijnweijer"
+          style={{ width: "50px", height: "50px" }}
+        >
+          <img src={github} alt="githubicon" />
+        </a>
+        <a
+          href="http://linkedin.com/in/carlijnvandeweijer"
+          style={{ width: "50px", height: "50px" }}
+        >
+          <img src={linkedin} alt="linkedinicon" />
+        </a>
       </div>
-      <div className="rightside">
-        <h3>subttile</h3>
-        <p>text</p>
-      </div>
+
+      {/* <div className="navbar">
+        <Navigation />
+      </div> */}
     </div>
   );
 };

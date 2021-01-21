@@ -31,7 +31,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
               portfolio
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               activeClass="active"
               to="section4"
@@ -41,7 +41,7 @@ export const Navigation: React.FC<NavigationProps> = () => {
             >
               footer
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
