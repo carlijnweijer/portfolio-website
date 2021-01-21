@@ -4,6 +4,46 @@
 .portfolio-section {
   margin-bottom: 20px;
 
+  .left-content {
+    display: flex;
+    justify-content: space-around;
+
+    .tech-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      border: solid 2px black;
+      padding: 10px;
+      box-shadow: 5px 5px 2px black;
+      width: 500px;
+      z-index: 1;
+      position: relative;
+      bottom: 80px;
+
+      @include media("<=tablet") {
+        bottom: 40px;
+      }
+
+      .tech-title {
+        font-family: "Roboto Mono";
+        margin: 0;
+      }
+
+      .tech-icons {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100%;
+      }
+
+      .tech-icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
   .portfolio-item {
     display: flex;
     justify-content: center;

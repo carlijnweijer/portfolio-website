@@ -1,5 +1,6 @@
 import React from "react";
 import { animated, interpolate, useSpring } from "react-spring";
+import hoverText from "../assets/hoverText.svg";
 import { Navigation } from "../components/Navigation";
 import "../styles/about.scss";
 
@@ -31,6 +32,7 @@ export const About: React.FC<AboutProps> = ({ id }) => {
       <div className="leftside">
         <div className="left-content">
           <div className="profilepic"></div>
+          <img src={hoverText} alt="hovertext" className="hoverText" />
           <h1 className="title about-title">about me</h1>
         </div>
         <div className="navbar">
@@ -50,7 +52,7 @@ export const About: React.FC<AboutProps> = ({ id }) => {
           <p>
             I'm 26 years old, I live in The Hague and I'm the proud mom of a 6
             years old Golden Retriever named{" "}
-            <span className="tooltip">Benz</span>
+            <span className="tooltip">Benz</span> 🐶
           </p>
         </animated.div>
         <animated.div
@@ -71,12 +73,12 @@ export const About: React.FC<AboutProps> = ({ id }) => {
           // @ts-ignore
           style={{ transform: interpolate(props.xy, trans3) }}
         >
-          <h5>What I love most about programming</h5>
+          <h5>What I love most about programming 👩‍💻</h5>
           <p>
             From I young age I have loved two hobbies very much; puzzles (like
             sudoku) and drawing. In programming I have found these two hobbies
             come together. Programming is like solving a complex puzzle and
-            painting a masterpiece at the same time!
+            painting a masterpiece 👩🏼‍🎨 at the same time!
           </p>
         </animated.div>
         <animated.div

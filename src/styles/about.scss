@@ -20,6 +20,14 @@
     }
   }
 
+  .hoverText {
+    height: 80px;
+
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+
   .about-card {
     display: flex;
     justify-content: center;
