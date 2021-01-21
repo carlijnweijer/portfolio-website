@@ -1,4 +1,5 @@
 import React from "react";
+import notebooks from "../assets/portfolioImages/notebooksCover.png";
 import Studychoice from "../assets/portfolioImages/studychoiceHUB.png";
 import winepairCover from "../assets/portfolioImages/winepairCover.png";
 import { Navigation } from "../components/Navigation";
@@ -25,6 +26,11 @@ export const Portfolio: React.FC<PortfolioProps> = ({ id }) => {
           title="Winepair"
           subtitle="Winepair is an app where you can find the perfect wine to pair with your dish. Or.. if you have a good wine to find a perfect dish to go with it!"
           image={winepairCover}
+        />
+        <PortfolioItem
+          title="Notebooks"
+          subtitle="Notebooks is an app made to support the future students of the Codaisseur academy. With this app we've created a central place to save, read and share notes regarding the topics thaught in class."
+          image={notebooks}
         />
         <PortfolioItem
           title="Studychoice HUB"
